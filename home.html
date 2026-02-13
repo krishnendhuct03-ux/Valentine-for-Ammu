@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Ammu Kutty ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #ffe6f0, #ffffff);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 70px 20px;
+    }
+
+    h1, h2 {
+      color: #d63384;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.8;
+    }
+
+    .card {
+      background: #ffffff;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    button {
+      margin: 10px;
+      padding: 14px 32px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: #ff4d88;
+      color: white;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e63971;
+    }
+
+    .soft {
+      background: #f1f1f1;
+      color: #333;
+    }
+
+    #response {
+      margin-top: 25px;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .heart {
+      position: fixed;
+      top: -10px;
+      font-size: 20px;
+      animation: fall 6s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10px); }
+      100% { transform: translateY(110vh); }
+    }
+  </style>
+</head>
+
+<body>
+
+<section>
+  <h1>Ammu Kutty ❤️</h1>
+  <p>
+    I know this website is not enough to make you feel a real Valentine’s Day, Ammu mol.  
+    <br><br>
+    Like everyone celebrates with gifts and surprises, I also wished to do the same with u.  
+    But as u know my situation — practicals, distance, and not enough money —  
+    so thats y ammu mol...this is my way of telling you how much you mean to me ammu mol 🤍
+  </p>
+  <button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+    Start Our Story
+  </button>
+</section>
+
+<section id="story">
+  <h2>From My Heart</h2>
+  <div class="card">
+    <p>
+      Ammu mol… as you once asked me why I forced you into a relationship when you were uncomfortable,  
+      I want to answer that honestly ammu mol.
+      <br><br>
+      U said... Maybe I should have stayed with you without saying “I love you” to each other.  
+      But if that actually happend, I wouldn’t able to express what I truly felt inside, sweetheart.
+      <br><br>
+      I wanted to make sure that you knew I was a caring guy.  
+      I wanted to be the best boyfriend you could ever dream of.  
+      I wanted to make sure you were never uncomfortable with me baby.
+      <br><br>
+      Still, sometimes I feel bad that you asked me that question —  
+      because maybe somewhere, unknowingly, I made you feel uncomfortable or sad.  
+      And that was never my intention ammu kutty 🤍
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>1 January 2025 💍</h2>
+  <div class="card">
+    <p>
+      On the very first day of the year,  
+      I chose you, Ammu.
+      <br><br>
+      Not because everything was perfect,  
+      but because my feelings for you were real, deep, and honest.. and wanted to show how much i wanted to show my caring and make u feel cared and very comfortable around me.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>This Valentine’s Day 💌</h2>
+  <div class="card">
+    <p>
+      So my dear Ammu mol…
+      <br><br>
+      Are you willing to walk forward  
+      with this not perfect,  
+      but caring and little handsome boyfriend of yours? 😘😅
+    </p>
+
+    <button onclick="yesClicked()">❤️ Yes</button>
+    <button class="soft" onclick="timeClicked()">🤍 I need time</button>
+
+    <p id="response"></p>
+  </div>
+</section>
+
+<script>
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 6000);
+  }
+
+  setInterval(createHeart, 700);
+
+  function yesClicked() {
+    document.getElementById("response").innerHTML =
+      "❤️ Thank you, Ammu. This means everything to me. I promise to be caring, respectful, and always choose you.";
+  }
+
+  function timeClicked() {
+    document.getElementById("response").innerHTML =
+      "🤍 It’s okay, Ammu. I will be very caring… more caring… and make you feel more comfortable, always.";
+  }
+</script>
+
+</body>
+</html>
