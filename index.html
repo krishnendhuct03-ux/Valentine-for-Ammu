@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Ammu ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #ffe6f0, #ffffff);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    section {
+      padding: 70px 20px;
+    }
+
+    h1, h2 {
+      color: #d63384;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .card {
+      background: #ffffff;
+      max-width: 650px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    }
+
+    button {
+      margin: 10px;
+      padding: 14px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      background: #ff4d88;
+      color: white;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #e63971;
+    }
+
+    .soft {
+      background: #f1f1f1;
+      color: #333;
+    }
+
+    .heart {
+      position: fixed;
+      top: -10px;
+      font-size: 20px;
+      animation: fall 6s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-10px); }
+      100% { transform: translateY(110vh); }
+    }
+  </style>
+</head>
+
+<body>
+
+<section>
+  <h1>Ammu kutty ❤️</h1>
+  <p>
+    This isn’t a perfect love story.<br>
+    But it’s an honest one.
+  </p>
+  <button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+    Start Our Story
+  </button>
+</section>
+
+<section id="story">
+  <h2>Our Beginning</h2>
+  <div class="card">
+    <p>
+      Our beginning wasn’t easy.  
+      There were moments when you felt uncomfortable,  
+      and I didn’t understand things the way I should have.  
+      <br><br>
+      I accept my mistakes.  
+      And I regret the times I didn’t listen enough.  
+      <br><br>
+      But my care for you was always real,  
+      and I truly tried to make you happy.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>1 January 2025 💍</h2>
+  <div class="card">
+    <p>
+      On the very first day of the year,  
+      I made a choice —  
+      not out of pressure, but out of feelings.  
+      <br><br>
+      I chose you,  
+      with honesty, effort, and a heart that wanted to grow.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>A Letter From Me</h2>
+  <div class="card">
+    <p>
+      I am learning what love truly means.  
+      <br><br>
+      It means patience over ego,  
+      listening over reacting,  
+      and respecting your comfort above my wishes.  
+      <br><br>
+      I may not be perfect,  
+      but I promise to be better.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>My Promises 🤍</h2>
+  <div class="card">
+    <p>
+      • I promise to respect your feelings.<br>
+      • I promise to listen before speaking.<br>
+      • I promise patience, not pressure.<br>
+      • I promise growth — for you and for us.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>This Valentine’s Day 💌</h2>
+  <div class="card">
+    <p>
+      This website isn’t asking you to forget the past.  
+      <br><br>
+      It’s only asking one thing —  
+      <br><br>
+      Are you willing to walk forward, at your pace, with me?
+    </p>
+    <button>❤️ Yes</button>
+    <button class="soft">🤍 I need time</button>
+  </div>
+</section>
+
+<script>
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 6000);
+  }
+
+  setInterval(createHeart, 700);
+</script>
+
+</body>
+</html>
