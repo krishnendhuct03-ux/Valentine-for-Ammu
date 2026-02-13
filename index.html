@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>For Ammu ❤️</title>
+  <title>For Ammu Kutty ❤️</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -25,21 +25,21 @@
 
     p {
       font-size: 17px;
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     .card {
       background: #ffffff;
-      max-width: 650px;
+      max-width: 700px;
       margin: 30px auto;
       padding: 30px;
-      border-radius: 18px;
+      border-radius: 20px;
       box-shadow: 0 15px 30px rgba(0,0,0,0.1);
     }
 
     button {
       margin: 10px;
-      padding: 14px 30px;
+      padding: 14px 32px;
       font-size: 16px;
       border: none;
       border-radius: 30px;
@@ -56,6 +56,12 @@
     .soft {
       background: #f1f1f1;
       color: #333;
+    }
+
+    #response {
+      margin-top: 25px;
+      font-size: 18px;
+      color: #555;
     }
 
     .heart {
@@ -76,10 +82,13 @@
 <body>
 
 <section>
-  <h1>Ammu kutty ❤️</h1>
+  <h1>Ammu Kutty ❤️</h1>
   <p>
-    This isn’t a perfect love story.<br>
-    But it’s an honest one.
+    I know this website is not enough to make you feel a real Valentine’s Day, Ammu mol.  
+    <br><br>
+    Like everyone celebrates with gifts and surprises, I also wished to do the same.  
+    But as you know my situation — practicals, distance, and not enough money —  
+    this is my way of telling you how much you mean to me 🤍
   </p>
   <button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
     Start Our Story
@@ -87,18 +96,22 @@
 </section>
 
 <section id="story">
-  <h2>Our Beginning</h2>
+  <h2>From My Heart</h2>
   <div class="card">
     <p>
-      Our beginning wasn’t easy.  
-      There were moments when you felt uncomfortable,  
-      and I didn’t understand things the way I should have.  
+      Ammu mol… as you once asked me why I forced you into a relationship when you were uncomfortable,  
+      I want to answer that honestly here.
       <br><br>
-      I accept my mistakes.  
-      And I regret the times I didn’t listen enough.  
+      Maybe I should have stayed with you without saying “I love you” to each other.  
+      But at that time, I wasn’t able to express what I truly felt inside, sweetheart.
       <br><br>
-      But my care for you was always real,  
-      and I truly tried to make you happy.
+      I wanted to make sure you knew I was a caring guy.  
+      I wanted to be the best boyfriend you could ever dream of.  
+      I wanted to make sure you were never uncomfortable with me, baby.
+      <br><br>
+      Still, sometimes I feel bad that you asked me that question —  
+      because maybe somewhere, unknowingly, I made you feel uncomfortable or sad.  
+      And that was never my intention 🤍
     </p>
   </div>
 </section>
@@ -108,39 +121,10 @@
   <div class="card">
     <p>
       On the very first day of the year,  
-      I made a choice —  
-      not out of pressure, but out of feelings.  
+      I chose you, Ammu.
       <br><br>
-      I chose you,  
-      with honesty, effort, and a heart that wanted to grow.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>A Letter From Me</h2>
-  <div class="card">
-    <p>
-      I am learning what love truly means.  
-      <br><br>
-      It means patience over ego,  
-      listening over reacting,  
-      and respecting your comfort above my wishes.  
-      <br><br>
-      I may not be perfect,  
-      but I promise to be better.
-    </p>
-  </div>
-</section>
-
-<section>
-  <h2>My Promises 🤍</h2>
-  <div class="card">
-    <p>
-      • I promise to respect your feelings.<br>
-      • I promise to listen before speaking.<br>
-      • I promise patience, not pressure.<br>
-      • I promise growth — for you and for us.
+      Not because everything was perfect,  
+      but because my feelings for you were real, deep, and honest.
     </p>
   </div>
 </section>
@@ -149,14 +133,17 @@
   <h2>This Valentine’s Day 💌</h2>
   <div class="card">
     <p>
-      This website isn’t asking you to forget the past.  
+      So my dear Ammu mol…
       <br><br>
-      It’s only asking one thing —  
-      <br><br>
-      Are you willing to walk forward, at your pace, with me?
+      Are you willing to walk forward  
+      with this not-so-called perfect,  
+      but caring and little handsome boyfriend of yours? 😘😅
     </p>
-    <button>❤️ Yes</button>
-    <button class="soft">🤍 I need time</button>
+
+    <button onclick="yesClicked()">❤️ Yes</button>
+    <button class="soft" onclick="timeClicked()">🤍 I need time</button>
+
+    <p id="response"></p>
   </div>
 </section>
 
@@ -174,6 +161,16 @@
   }
 
   setInterval(createHeart, 700);
+
+  function yesClicked() {
+    document.getElementById("response").innerHTML =
+      "❤️ Thank you, Ammu. This means everything to me. I promise to be caring, respectful, and always choose you.";
+  }
+
+  function timeClicked() {
+    document.getElementById("response").innerHTML =
+      "🤍 It’s okay, Ammu. I will be very caring… more caring… and make you feel more comfortable, always.";
+  }
 </script>
 
 </body>
